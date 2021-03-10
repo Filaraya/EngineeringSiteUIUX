@@ -1,0 +1,398 @@
+/**
+* Week_6_LESS Stylesheet
+* @author Filmon Araya
+*/
+
+// Variables
+@backgound-color: #777171;
+@font-family: "Palatino", "URW Palladio L",serif;
+@primary-color:#3432a3;
+@secondary-color:#2082AA;
+@line-height: 1em + 1em;
+@size: 10px;
+@color: #bcbfcf;
+@lighten-percentage: 10%;
+
+
+body{
+    
+    
+    
+	a.btn{
+		background-color:lighten(@primary-color, 12%);
+    }
+		
+	
+	
+	#mainNavigation{
+        background-color:@primary-color;
+        font-family: @font-family;
+        font-size: @size + 10px;
+		
+		.navbar-brand{
+			background-color:darken(@primary-color, 5%);
+			padding: 5px;
+			font-weight: bold;
+			
+			&:hover{
+				outline:1px solid lighten(@primary-color, 10%);
+			}
+		}
+		
+		a.nav-link{
+			color:#fff;
+			
+			&:hover{
+				color: rgba(255,255,255,.5);
+			}
+		}
+		
+		a.btn{
+			&:hover{
+				background-color:lighten(@primary-color, 8%)
+			}
+		}
+	}
+
+
+}
+
+
+
+
+.primary-text{
+    color: lighten(@color,25%);
+    font-family: @font-family;
+}
+/*
+.btn {
+    background-color:lighten(@primary-color, 12%);
+    }
+		&:hover{
+			background-color:lighten(@primary-color, 1%)
+		}	
+
+
+.primary-btn:extend(.btn){
+    background-color:lighten(@primary-color, 12%);
+    }
+		&:hover{
+			background-color:lighten(@color, 10%)
+		}	
+
+// nest
+
+  
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color:@primary-color;
+    padding: 20px;
+    font-family: @font-family;
+  }
+
+ 
+  .mt-80
+  {
+    margin-top: @size + 70px;
+  }
+  .mt-40
+  {
+      margin-top: @size + 30px;
+  }
+  .mt-20
+  {
+      margin-top: @size + 10px;
+  }
+  .mt-5
+  {
+      margin-top: @size - 5px;
+  }
+  .mt-10
+  {
+      margin-top: @size;
+  }
+
+  // entered
+  .card-title
+{
+    justify-content: center;
+}
+
+
+
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background:#28a745;
+}
+
+.btn.btn-rounded {
+    border-radius: 50px
+}
+
+.btn-outline-facebook {
+    border: 1px solid #3b579d;
+    color: #3b579d;
+}
+
+.row.heading h2 {
+    color: lighten(@color, @lighten-percentage); // operation LESS
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid lighten(@color, @lighten-percentage); // Operation LESS
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+
+
+.our-webcoderskull{
+    background:  @backgound-color;
+    
+  
+}
+.our-webcoderskull .cnt-block{ 
+   float:left; 
+   width:100%; 
+   background:lighten(@color, @lighten-percentage); 
+   padding:30px 20px; 
+   text-align:center; 
+   border:2px solid #d5d5d5;
+   margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+}
+
+// My Mixin
+.mixinColor{
+    color:#2a2a2a
+}
+
+.our-webcoderskull .cnt-block h3{ 
+   .mixinColor(); 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+	.mixinColor();
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+	color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{ 
+   .mixinColor(); 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+	margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+
+
+/* Contact Form  nested*/
+
+.contact_form {
+    
+   
+    
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid @backgound-color; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+      
+      /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+        background-color:@primary-color;
+        color: @backgound-color;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+        background-color: @primary-color;
+      }
+
+}
+
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  // login form
+
+.container_login{
+    border-radius: 5px;
+    background-color: @color;
+    ;
+    padding: 20px;
+
+    h2{
+        background-color: #FEFFED;
+        padding: 30px 35px;
+        margin: -10px -50px;
+        text-align:center;
+        border-radius: 10px 10px 0 0;
+    }
+    hr{
+        margin: 10px -50px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin-bottom: 40px;
+    }
+    .container{
+        background-color: #FEFFED;
+        width: 900px;
+        height: 610px;
+        margin:35px auto;
+        font-family: 'Raleway', sans-serif;
+
+    }
+    .main{
+        width: 300px;
+        padding: 10px 50px 25px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-family: raleway;
+        float:left;
+        margin-top:50px;
+        background-color: #FEFFED;
+        
+    }
+    input[type=text],input[type=password]{
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        border: 2px solid #ccc;
+        color: #4f4f4f;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    label{
+        color: #464646;
+        text-shadow: 0 1px 0 #fff;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    center{
+        font-size:32px;
+    }
+    .note{
+    color:red;
+    }
+    .valid{
+        color:green;
+    }
+    .back{
+        text-decoration: none;
+        border: 1px solid rgb(0, 143, 255);
+        background-color: rgb(0, 214, 255);
+        padding: 3px 20px;
+        border-radius: 2px;
+        color: black;
+    }
+    input[type=button]{
+        font-size: 16px;
+        background: linear-gradient(#9dff00 5%, #bdff7f 100%);
+        border: 1px solid #00b0e5;
+        color: #4E4D4B;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        outline:none;
+    }
+    input[type=button]:hover{
+    background: linear-gradient(#7fdbff 5%, #00a2ff 100%);
+    }
+
+}
+  

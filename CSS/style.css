@@ -1,0 +1,329 @@
+/**
+* Week_6_LESS Stylesheet
+* @author Filmon Araya
+*/
+body a.btn {
+  background-color: #4d4bc8;
+}
+body #mainNavigation {
+  background-color: #3432a3;
+  font-family: "Palatino", "URW Palladio L", serif;
+  font-size: 20px;
+}
+body #mainNavigation .navbar-brand {
+  background-color: #2e2c8f;
+  padding: 5px;
+  font-weight: bold;
+}
+body #mainNavigation .navbar-brand:hover {
+  outline: 1px solid #4543c5;
+}
+body #mainNavigation a.nav-link {
+  color: #fff;
+}
+body #mainNavigation a.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+body #mainNavigation a.btn:hover {
+  background-color: #3e3cc2;
+}
+.primary-text {
+  color: #ffffff;
+  font-family: "Palatino", "URW Palladio L", serif;
+}
+/*
+.btn {
+    background-color:lighten(@primary-color, 12%);
+    }
+		&:hover{
+			background-color:lighten(@primary-color, 1%)
+		}	
+
+
+.primary-btn:extend(.btn){
+    background-color:lighten(@primary-color, 12%);
+    }
+		&:hover{
+			background-color:lighten(@color, 10%)
+		}	
+
+// nest
+
+  
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #3432a3;
+  padding: 20px;
+  font-family: "Palatino", "URW Palladio L", serif;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.card-title {
+  justify-content: center;
+}
+.width-auto {
+  width: auto;
+}
+.text-lg {
+  font-size: 2rem;
+}
+.carousel-indicators li {
+  border: none;
+  background: #ccc;
+}
+.carousel-indicators li.active {
+  background: #28a745;
+}
+.btn.btn-rounded {
+  border-radius: 50px;
+}
+.btn-outline-facebook {
+  border: 1px solid #3b579d;
+  color: #3b579d;
+}
+.row.heading h2 {
+  color: #dadbe4;
+  font-size: 52.52px;
+  line-height: 95px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 40px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.heading.heading-icon {
+  display: block;
+}
+.padding-lg {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+  padding-bottom: 55px;
+  padding-top: 55px;
+}
+.practice-area .inner {
+  border: 1px solid #dadbe4;
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+.practice-area .inner h3 {
+  color: #3c3c3c;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+}
+.practice-area .inner p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.practice-area .inner img {
+  display: inline-block;
+}
+.our-webcoderskull {
+  background: #777171;
+}
+.our-webcoderskull .cnt-block {
+  float: left;
+  width: 100%;
+  background: #dadbe4;
+  padding: 30px 20px;
+  text-align: center;
+  border: 2px solid #d5d5d5;
+  margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure {
+  width: 148px;
+  height: 148px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img {
+  width: 148px;
+  height: 148px;
+  border-radius: 100%;
+}
+.mixinColor {
+  color: #2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 {
+  color: #2a2a2a;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-transform: uppercase;
+}
+.our-webcoderskull .cnt-block h3 a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover {
+  color: #337ab7;
+}
+.our-webcoderskull .cnt-block p {
+  color: #2a2a2a;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.our-webcoderskull .cnt-block .follow-us {
+  margin: 20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li {
+  display: inline-block;
+  width: auto;
+  margin: 0 5px;
+}
+/* Contact Form  nested*/
+.contact_form {
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+}
+.contact_form input[type=text],
+.contact_form select,
+.contact_form textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #777171;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.contact_form input[type=submit] {
+  background-color: #3432a3;
+  color: #777171;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact_form input[type=submit]:hover {
+  background-color: #3432a3;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.container_login {
+  border-radius: 5px;
+  background-color: #bcbfcf;
+  padding: 20px;
+}
+.container_login h2 {
+  background-color: #FEFFED;
+  padding: 30px 35px;
+  margin: -10px -50px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+.container_login hr {
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+.container_login .container {
+  background-color: #FEFFED;
+  width: 900px;
+  height: 610px;
+  margin: 35px auto;
+  font-family: 'Raleway', sans-serif;
+}
+.container_login .main {
+  width: 300px;
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: raleway;
+  float: left;
+  margin-top: 50px;
+  background-color: #FEFFED;
+}
+.container_login input[type=text],
+.container_login input[type=password] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.container_login label {
+  color: #464646;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.container_login center {
+  font-size: 32px;
+}
+.container_login .note {
+  color: red;
+}
+.container_login .valid {
+  color: green;
+}
+.container_login .back {
+  text-decoration: none;
+  border: 1px solid #008fff;
+  background-color: #00d6ff;
+  padding: 3px 20px;
+  border-radius: 2px;
+  color: black;
+}
+.container_login input[type=button] {
+  font-size: 16px;
+  background: linear-gradient(#9dff00 5%, #bdff7f 100%);
+  border: 1px solid #00b0e5;
+  color: #4E4D4B;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline: none;
+}
+.container_login input[type=button]:hover {
+  background: linear-gradient(#7fdbff 5%, #00a2ff 100%);
+}
