@@ -31,5 +31,4 @@ You might want to consider using something like the [All Contributors](https://g
 
 If you want to contact me you can reach me at <https://www.linkedin.com/in/filmonyaraya/>.
 
-## Web link.
-https://filaraya.github.io/EngineeringSiteUIUX/
+
