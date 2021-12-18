@@ -24,6 +24,8 @@ Thanks to the following people who have contributed to this project:
 
 * [@Filmon](https://github.com/Filaraya) 📖
 
+* The site can be view here:  https://filaraya.github.io/EngineeringSiteUIUX/
+
 
 You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
 
