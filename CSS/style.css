@@ -30,25 +30,7 @@ body #mainNavigation a.btn:hover {
   color: #ffffff;
   font-family: "Palatino", "URW Palladio L", serif;
 }
-/*
-.btn {
-    background-color:lighten(@primary-color, 12%);
-    }
-		&:hover{
-			background-color:lighten(@primary-color, 1%)
-		}	
 
-
-.primary-btn:extend(.btn){
-    background-color:lighten(@primary-color, 12%);
-    }
-		&:hover{
-			background-color:lighten(@color, 10%)
-		}	
-
-// nest
-
-  
 
 /* Add a background color and some padding around the form */
 .container {
