@@ -1,6 +1,6 @@
 # EngineeringSiteUIUX
 # 
-
+![Site Demo](Images/Demo_UI_UX.GIF) 
 
 Project name is a responsive site for an Engineering and Construction company. It has implemented main modern UI/UX including HTML, CSS, SASS, JS and Bootstrap.
 
